@@ -32,7 +32,7 @@ public class CustomerController {
     // PUT /customers/{id}
     @PutMapping("/{id}")
     public Customer updateCustomer(
-            @PathVariable Long id,
+            @PathVariable Long id, 
             @RequestBody Customer customer) {
         return service.updateCustomer(id, customer);
     }
